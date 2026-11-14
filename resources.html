@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1A1835">
+<meta name="description" content="Crisis lines, student counselling, online chat support and further reading — plus a clear reminder that this site is health communication only and cannot replace professional care.">
+<title>Support &amp; Resources — Burnout Unpacked</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="resources">
+
+<header class="site-header" data-nav></header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow" data-reveal><span class="dot" aria-hidden="true"></span><span data-i18n="resources.hero.eyebrow">Support &amp; resources</span></span>
+      <h1 data-reveal style="--rd:80ms;max-width:20ch" data-i18n="resources.hero.title">Where to find real support</h1>
+      <p class="lede" data-reveal style="--rd:160ms" data-i18n="resources.hero.lead"></p>
+    </div>
+  </section>
+
+  <!-- ============ DISCLAIMER ============ -->
+  <section>
+    <div class="wrap">
+      <div class="disclaimer" data-reveal>
+        <strong data-i18n="resources.disclaimer.title">Please read first</strong>
+        <span data-i18n="resources.disclaimer.body"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CRISIS ============ -->
+  <section>
+    <div class="wrap">
+      <div class="crisis" data-reveal>
+        <h3>
+          <svg viewBox="0 0 48 48" width="28" height="28" aria-hidden="true" style="color:var(--accent)"><use href="#m-heart"></use><use xlink:href="#m-heart"></use></svg>
+          <span data-i18n="resources.crisis.title">If you are in crisis right now</span>
+        </h3>
+        <p style="margin-bottom:1.1em" data-i18n="resources.crisis.body"></p>
+        <a class="btn btn-primary" href="tel:999" aria-label="Call 999 emergency services" data-i18n="resources.crisis.callNow">Call 999 now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FILTERED RESOURCES ============ -->
+  <section>
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2 data-i18n="resources.hero.eyebrow">Support &amp; resources</h2>
+      </div>
+      <div class="filter-bar" id="filters" role="group" data-i18n-aria="common.filters"></div>
+      <div class="grid auto" id="res-grid"></div>
+      <p class="tiny mt-2" data-i18n="resources.verifyNote"></p>
+    </div>
+  </section>
+
+  <!-- ============ FURTHER READING ============ -->
+  <section>
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2 data-i18n="resources.reading.title">Further reading</h2>
+      </div>
+      <div class="grid two mt-2" id="reading-list"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="card glowable center" data-reveal style="padding:clamp(28px,5vw,52px)">
+        <h2 style="margin-top:0" data-i18n="resources.ctaTitle">Thank you for reading slowly.</h2>
+        <p class="lede center" style="margin-inline:auto" data-i18n="resources.ctaLead"></p>
+        <a class="btn btn-primary mt-1" href="index.html" data-i18n="resources.ctaButton">Back to the beginning</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" data-footer></footer>
+
+<script src="translations.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

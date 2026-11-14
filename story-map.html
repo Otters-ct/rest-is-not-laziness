@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1A1835">
+<meta name="description" content="An interactive story map of burnout: five stages — stress build-up, early exhaustion, burnout peak, awareness and pause, adjustment and recovery — told through anonymous voices.">
+<title>Burnout Story Map — Burnout Unpacked</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="story">
+
+<header class="site-header" data-nav></header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow" data-reveal><span class="dot" aria-hidden="true"></span><span data-i18n="story.hero.eyebrow">Story map</span></span>
+      <h1 data-reveal style="--rd:80ms;max-width:20ch" data-i18n="story.hero.title">How burnout unfolds</h1>
+      <p class="lede" data-reveal style="--rd:160ms" data-i18n="story.hero.lead"></p>
+    </div>
+  </section>
+
+  <!-- ============ TIMELINE ============ -->
+  <section>
+    <div class="wrap">
+      <p class="row small" data-reveal style="gap:10px">
+        <span class="chip lav" data-i18n="story.legend"></span>
+        <span class="muted" data-i18n="story.instructions"></span>
+      </p>
+
+      <div class="timeline-wrap mt-2" data-reveal>
+        <div class="timeline" id="timeline" role="list"></div>
+      </div>
+
+      <div class="story-panel" id="story-panel" role="region" aria-live="polite" data-i18n-aria="story.hero.title"></div>
+    </div>
+  </section>
+
+  <!-- ============ NON-LINEAR ============ -->
+  <section>
+    <div class="wrap">
+      <div class="card glowable" data-reveal>
+        <span class="illu lav"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#m-leaf"></use><use xlink:href="#m-leaf"></use></svg></span>
+        <h2 data-i18n="story.nonlinear.title">Recovery is not a straight line</h2>
+        <p class="lede" style="margin:0" data-i18n="story.nonlinear.body"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REFLECTIVE PROMPTS ============ -->
+  <section>
+    <div class="wrap">
+      <div class="card" data-reveal>
+        <h2 data-i18n="story.reflect.title">Pause and notice</h2>
+        <p class="muted" data-i18n="story.reflect.lead"></p>
+        <div class="mt-1" id="story-reflect"></div>
+        <p class="tiny mt-1" data-i18n="common.notADiagnosis"></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="card glowable center" data-reveal style="padding:clamp(28px,5vw,52px)">
+        <h2 style="margin-top:0" data-i18n="story.ctaTitle">Next: what actually helps</h2>
+        <p class="lede center" style="margin-inline:auto" data-i18n="story.ctaLead"></p>
+        <a class="btn btn-primary mt-1" href="toolkit.html" data-i18n="story.ctaButton">Open the recovery toolkit</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="disclaimer" data-reveal>
+        <strong data-i18n="resources.disclaimer.title">Please read first</strong>
+        <span data-i18n="footer.ethics"></span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" data-footer></footer>
+
+<script src="translations.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

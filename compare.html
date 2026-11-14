@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1A1835">
+<meta name="description" content="Comparing short-term fatigue, burnout and clinical depression — where they differ, where they overlap, and a gentle non-diagnostic self-reflection checklist.">
+<title>Fatigue · Burnout · Depression — Burnout Unpacked</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="compare">
+
+<header class="site-header" data-nav></header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow" data-reveal><span class="dot" aria-hidden="true"></span><span data-i18n="compare.hero.eyebrow">Side by side</span></span>
+      <h1 data-reveal style="--rd:80ms;max-width:22ch" data-i18n="compare.hero.title">Fatigue, burnout or depression?</h1>
+      <p class="lede" data-reveal style="--rd:160ms" data-i18n="compare.hero.lead"></p>
+    </div>
+  </section>
+
+  <!-- ============ SLIDER ============ -->
+  <section>
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2 data-i18n="compare.slider.title">Move between the three states</h2>
+        <p class="lede" data-i18n="compare.slider.lead"></p>
+      </div>
+      <div class="compare-stage mt-2" data-reveal>
+        <div class="compare-readout" id="compare-readout"></div>
+        <label class="sr-only" for="compare-slider" data-i18n="compare.slider.title">Move between the three states</label>
+        <input class="slider" type="range" id="compare-slider" min="0" max="2" step="1" value="0"
+               aria-valuemin="0" aria-valuemax="2" aria-describedby="slider-ticks">
+        <div class="slider-ticks" id="slider-ticks"></div>
+        <div class="compare-panel" id="compare-panel" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CO-OCCURRENCE ============ -->
+  <section>
+    <div class="wrap">
+      <div class="card glowable" data-reveal>
+        <span class="illu peach"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#m-heart"></use><use xlink:href="#m-heart"></use></svg></span>
+        <h2 data-i18n="compare.cooccur.title">They can happen together</h2>
+        <p class="lede" style="margin:0" data-i18n="compare.cooccur.body"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SELF-REFLECTION CHECKLIST ============ -->
+  <section>
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2 data-i18n="compare.check.title">A gentle self-reflection</h2>
+        <p class="lede" data-i18n="compare.check.lead"></p>
+      </div>
+      <div class="check-list mt-2" id="check-list" role="group" data-i18n-aria="compare.check.title"></div>
+      <p class="check-note" id="check-note"></p>
+      <div id="check-result" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ============ CASES ============ -->
+  <section>
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2 data-i18n="compare.cases.title">Three short cases</h2>
+        <p class="lede" data-i18n="compare.cases.lead"></p>
+      </div>
+      <div class="grid three mt-2" id="cases"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="card glowable center" data-reveal style="padding:clamp(28px,5vw,52px)">
+        <h2 style="margin-top:0" data-i18n="compare.ctaTitle">Next: how burnout unfolds</h2>
+        <p class="lede center" style="margin-inline:auto" data-i18n="compare.ctaLead"></p>
+        <a class="btn btn-primary mt-1" href="story-map.html" data-i18n="compare.ctaButton">Open the story map</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="disclaimer" data-reveal>
+        <strong data-i18n="resources.disclaimer.title">Please read first</strong>
+        <span data-i18n="footer.ethics"></span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" data-footer></footer>
+
+<script src="translations.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

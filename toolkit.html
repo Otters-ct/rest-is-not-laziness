@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1A1835">
+<meta name="description" content="A practical recovery toolkit for burnout: boundary scripts, gentle refusals, a priority-sorting activity, the 5-4-3-2-1 grounding exercise and a downloadable reflective journal.">
+<title>Recovery Toolkit — Burnout Unpacked</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="toolkit">
+
+<header class="site-header" data-nav></header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow" data-reveal><span class="dot" aria-hidden="true"></span><span data-i18n="toolkit.hero.eyebrow">Recovery toolkit</span></span>
+      <h1 data-reveal style="--rd:80ms;max-width:20ch" data-i18n="toolkit.hero.title">Small things, done gently</h1>
+      <p class="lede" data-reveal style="--rd:160ms" data-i18n="toolkit.hero.lead"></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="card glowable" data-reveal>
+        <span class="illu rose"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#m-house"></use><use xlink:href="#m-house"></use></svg></span>
+        <h2 data-i18n="toolkit.boundaries.title">Boundary-setting, without the guilt</h2>
+        <p class="lede" style="margin:0" data-i18n="toolkit.boundaries.body"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BOUNDARY BUILDER ============ -->
+  <section>
+    <div class="wrap">
+      <div class="card" data-reveal>
+        <h2 data-i18n="toolkit.builder.title">Boundary sentence builder</h2>
+        <p class="muted" data-i18n="toolkit.builder.lead"></p>
+
+        <span class="field-label" data-i18n="toolkit.builder.whoLabel">Who is it for?</span>
+        <div class="seg" id="who-seg" role="group" data-i18n-aria="toolkit.builder.whoLabel"></div>
+
+        <span class="field-label" data-i18n="toolkit.builder.needLabel">What do you need?</span>
+        <div class="seg" id="need-seg" role="group" data-i18n-aria="toolkit.builder.needLabel"></div>
+
+        <span class="field-label" data-i18n="toolkit.builder.toneLabel">Tone</span>
+        <div class="seg" id="tone-seg" role="group" data-i18n-aria="toolkit.builder.toneLabel"></div>
+
+        <p class="tiny mt-1" data-i18n="toolkit.builder.hint"></p>
+        <div class="builder-out" id="builder-out" aria-live="polite"></div>
+        <div class="btn-row mt-1">
+          <button class="btn btn-ghost btn-sm" type="button" id="builder-copy" data-i18n="toolkit.builder.copy">Copy script</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRIORITY SORTING ============ -->
+  <section>
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2 data-i18n="toolkit.priority.title">Sort what is actually urgent</h2>
+        <p class="lede" data-i18n="toolkit.priority.lead"></p>
+      </div>
+      <div class="mt-2" id="zones"></div>
+      <p class="tiny mt-1" data-i18n="toolkit.priority.note"></p>
+    </div>
+  </section>
+
+  <!-- ============ GROUNDING ============ -->
+  <section>
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2 data-i18n="toolkit.grounding.title">5-4-3-2-1 grounding</h2>
+        <p class="lede" data-i18n="toolkit.grounding.lead"></p>
+      </div>
+      <div class="ground-stage mt-2" id="ground-stage" data-reveal data-i18n-aria="toolkit.grounding.title"></div>
+    </div>
+  </section>
+
+  <!-- ============ JOURNAL ============ -->
+  <section>
+    <div class="wrap">
+      <div class="card glowable" data-reveal>
+        <span class="illu peri"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#m-feather"></use><use xlink:href="#m-feather"></use></svg></span>
+        <h2 data-i18n="toolkit.journal.title">Reflective journal template</h2>
+        <p class="lede" data-i18n="toolkit.journal.lead"></p>
+        <p class="muted" data-i18n="toolkit.journal.promptList"></p>
+        <button class="btn btn-primary mt-1" type="button" id="journal-dl" data-i18n="toolkit.journal.download">Download journal template</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRACTICES ============ -->
+  <section>
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2 data-i18n="toolkit.practices.title">Recovery practices worth keeping</h2>
+      </div>
+      <div class="grid two mt-2" id="practices"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="card glowable center" data-reveal style="padding:clamp(28px,5vw,52px)">
+        <h2 style="margin-top:0" data-i18n="toolkit.ctaTitle">Next: where to get real support</h2>
+        <p class="lede center" style="margin-inline:auto" data-i18n="toolkit.ctaLead"></p>
+        <a class="btn btn-primary mt-1" href="resources.html" data-i18n="toolkit.ctaButton">See support &amp; resources</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="disclaimer" data-reveal>
+        <strong data-i18n="resources.disclaimer.title">Please read first</strong>
+        <span data-i18n="footer.ethics"></span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" data-footer></footer>
+
+<script src="translations.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
